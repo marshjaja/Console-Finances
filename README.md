@@ -7,8 +7,7 @@ https://marshjaja.github.io/Console-Finances/
 
  <h1>DESCRIPTION 📖</h1>
 
-# 👩🏾‍💻🏳️‍🌈Marcia Mijnhijmer🏳️‍🌈👩🏾‍💻 builds their Portfolio website but does it the bootstrap way
-##  Criterea
+# 👩🏾‍💻🏳️‍🌈Marcia Mijnhijmer🏳️‍🌈👩🏾‍💻 Goes Console! 
 
 Task: to write JavaScript code that analyzes the records to calculate each of the following:
 
