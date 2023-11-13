@@ -35,9 +35,10 @@ Greatest Increase in Profits/Losses: Feb-2012 ($1926159) <br/>
 Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167) <br/>
 
 - Your final code should print the analysis to the console.
-- 
+  
 # CUSTOM MODIFICATIONS
-I have incorporated the option to show the outcomes in HTML to test my knowledge and further learning.
+- I have incorporated the option to show the outcomes in HTML to test my knowledge and further learning.<br/>
+- I have also implemented a while loop to prompt users for their input, allowing them to choose which data they would like to see displayed, so that the visulisation of the data is a bit more interactive
 
 <h1>SCREENSHOTS📷</h1>
 
