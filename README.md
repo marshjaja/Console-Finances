@@ -10,7 +10,7 @@ https://marshjaja.github.io/Console-Finances/
 # 👩🏾‍💻🏳️‍🌈Marcia Mijnhijmer🏳️‍🌈👩🏾‍💻 builds their Portfolio website but does it the bootstrap way
 ##  Criterea
 
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+Task: to write JavaScript code that analyzes the records to calculate each of the following:
 
 - The total number of months included in the dataset.
 
