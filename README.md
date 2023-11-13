@@ -35,11 +35,13 @@ Greatest Increase in Profits/Losses: Feb-2012 ($1926159) <br/>
 Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167) <br/>
 
 - Your final code should print the analysis to the console.
-
+- 
+# CUSTOM MODIFICATIONS
+I have incorporated the option to show the outcomes in HTML to test my knowledge and further learning.
 
 <h1>SCREENSHOTS📷</h1>
 
----------
+![Screenshot 2023-11-13 at 16 06 39](https://github.com/marshjaja/Console-Finances/assets/114920895/930dfb9b-a711-4945-b6c0-48f5904f8fa5)
 
 <h1>GETTING STARTED❗</h1>
 
