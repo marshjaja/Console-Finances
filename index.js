@@ -167,3 +167,29 @@ console.log(
 		greatestDecreaseAmount +
 		")"
 );
+
+// ======  DISPLAY CODE IN HTML, LIVE SERVER ======>
+
+var totalMonths = document.getElementById("total-months");
+totalMonths.textContent = "Total Months: " + finances.length;
+
+var totalAmount = document.getElementById("total-amount");
+totalAmount.textContent = "Total: " + "$" + totalSum;
+
+var averageChangeResult = document.getElementById("average-change");
+averageChangeResult.textContent = "Average Change: " + averageChange.toFixed(2);
+
+var increaseResult = document.getElementById("increase");
+increaseResult.textContent =
+	"Greatest Increase in Profits/Losses: " +
+	greatestIncreaseDate +
+	" ($" +
+	greatestIncreaseAmount +
+	")";
+var decreaseResult = document.getElementById("decrease");
+decreaseResult.textContent =
+	"Greatest Decrease in Profits/Losses: " +
+	greatestDecreaseDate +
+	" ($" +
+	greatestDecreaseAmount +
+	")";
