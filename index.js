@@ -137,8 +137,9 @@ console.log(
 	"Greatest Increase in Profits/Losses: " +
 		greatestIncreaseDate +
 		" ($" +
-		greatestIncreaseAmount
-) + ")";
+		greatestIncreaseAmount +
+		")"
+);
 
 // ======  QUESTION 5 ANSWER: GREATEST DECREASE ======>
 var greatestDecreaseIndex = 0;
