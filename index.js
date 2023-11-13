@@ -111,3 +111,31 @@ for (var i = 1; i < finances.length; i++) {
 var averageChange = totalChange / (finances.length - 1);
 
 console.log("Average Change:", averageChange.toFixed(2));
+
+// ======  QUESTION 4 ANSWER ======>
+
+var greatestIncreaseIndex = 0;
+var greatestIncreaseDate = "";
+var greatestIncreaseAmount = 0;
+
+for (var i = 1; i < finances.length; i++) {
+	var change = finances[i][1] - finances[i - 1][1];
+
+	if (
+		change >
+		finances[greatestIncreaseIndex + 1][1] - finances[greatestIncreaseIndex][1]
+	) {
+		greatestIncreaseIndex = i - 1;
+	}
+}
+
+greatestIncreaseDate = finances[greatestIncreaseIndex + 1][0];
+greatestIncreaseAmount =
+	finances[greatestIncreaseIndex + 1][1] - finances[greatestIncreaseIndex][1];
+
+console.log(
+	"Greatest Decrease in Profits/Losses: " +
+		greatestIncreaseDate +
+		" ($" +
+		greatestIncreaseAmount
+) + ")";
