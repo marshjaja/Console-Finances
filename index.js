@@ -100,3 +100,14 @@ for (var i = 0; i < finances.length; i++) {
 	totalSum += finances[i][1];
 }
 console.log("Total: " + "$" + totalSum);
+
+// ======  QUESTION 3 ANSWER ======>
+var totalChange = 0;
+
+for (var i = 1; i < finances.length; i++) {
+	var change = finances[i][1] - finances[i - 1][1];
+	totalChange += change;
+}
+var averageChange = totalChange / (finances.length - 1);
+
+console.log("Average Change:", averageChange.toFixed(2));
