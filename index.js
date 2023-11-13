@@ -101,7 +101,7 @@ for (var i = 0; i < finances.length; i++) {
 }
 console.log("Total: " + "$" + totalSum);
 
-// ======  QUESTION 3 ANSWER ======>
+// ======  QUESTION 3 ANSWER: AVERAGE CHANGE ======>
 var totalChange = 0;
 
 for (var i = 1; i < finances.length; i++) {
@@ -112,7 +112,7 @@ var averageChange = totalChange / (finances.length - 1);
 
 console.log("Average Change:", averageChange.toFixed(2));
 
-// ======  QUESTION 4 ANSWER ======>
+// ======  QUESTION 4 ANSWER: GREATEST INCREASE ======>
 
 var greatestIncreaseIndex = 0;
 var greatestIncreaseDate = "";
@@ -134,8 +134,36 @@ greatestIncreaseAmount =
 	finances[greatestIncreaseIndex + 1][1] - finances[greatestIncreaseIndex][1];
 
 console.log(
-	"Greatest Decrease in Profits/Losses: " +
+	"Greatest Increase in Profits/Losses: " +
 		greatestIncreaseDate +
 		" ($" +
 		greatestIncreaseAmount
 ) + ")";
+
+// ======  QUESTION 5 ANSWER: GREATEST DECREASE ======>
+var greatestDecreaseIndex = 0;
+var greatestDecreaseDate = "";
+var greatestDecreaseAmount = 0;
+
+for (var i = 1; i < finances.length; i++) {
+	var change = finances[i][1] - finances[i - 1][1];
+
+	if (
+		change <
+		finances[greatestDecreaseIndex + 1][1] - finances[greatestDecreaseIndex][1]
+	) {
+		greatestDecreaseIndex = i - 1;
+	}
+}
+
+greatestDecreaseDate = finances[greatestDecreaseIndex + 1][0];
+greatestDecreaseAmount =
+	finances[greatestDecreaseIndex + 1][1] - finances[greatestDecreaseIndex][1];
+
+console.log(
+	"Greatest Decrease in Profits/Losses: " +
+		greatestDecreaseDate +
+		" ($" +
+		greatestDecreaseAmount +
+		")"
+);
