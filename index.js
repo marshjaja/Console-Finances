@@ -194,3 +194,50 @@ decreaseResult.textContent =
 	" ($" +
 	greatestDecreaseAmount +
 	")";
+
+var continueLoop = true;
+
+while (continueLoop) {
+	alert("\n WELCOME!\n Select the data you would like to visualize: ");
+
+	var choice = prompt(
+		"Enter your choice:\n1) Total Months \n 2) Total Net amount\n 3) Average Change\n 4) Greatest Increase in Profits/Losses: \n 5) Greatest Decrease in Profits/Losses: \n q) Press q to Quit):"
+	);
+
+	switch (choice) {
+		case "1":
+			alert("The Total number of Months in the data is: " + finances.length);
+			break;
+		case "2":
+			alert("Total net amount over the entire period was: $" + totalSum);
+			break;
+		case "3":
+			alert(
+				"Average Change in Profit/Losses over the entire period was: $" +
+					averageChange.toFixed(2)
+			);
+			break;
+		case "4":
+			alert(
+				"Greatest Increase in Profits/Losses was in " +
+					greatestIncreaseDate +
+					" the amount was: $" +
+					greatestIncreaseAmount
+			);
+			break;
+		case "5":
+			alert(
+				"Greatest Decrease in Profits/Losses was in " +
+					greatestDecreaseDate +
+					" the amount was: $" +
+					greatestDecreaseAmount
+			);
+			break;
+		case "q":
+			continueLoop = false;
+			break;
+		default:
+			alert("Invalid choice. Please enter a valid option.");
+			break;
+	}
+}
