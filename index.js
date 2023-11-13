@@ -92,3 +92,11 @@ console.log("Financial Analysis");
 console.log("------------------");
 //  <======  QUESTION 1 ANSWER: AMOUNT OF MONTHS ======>
 console.log("Total Months: " + finances.length);
+
+//  ======  QUESTION 2 ANSWER: TOTAL ======>
+var totalSum = 0;
+
+for (var i = 0; i < finances.length; i++) {
+	totalSum += finances[i][1];
+}
+console.log("Total: " + "$" + totalSum);
